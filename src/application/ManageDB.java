@@ -320,12 +320,7 @@ public class ManageDB {
 	   }
 	   
 
-	    /**
-	     * The main method used for testing the ManageDB class.
-	     *
-	     * @param args the command line arguments
-	     */
-	 
+
 	 public void removeOccupancy(int idPersonChoice,int idBed,Date startUtilDate,Date endUtilDate) {
 		 	Connection conn = null;
 	        PreparedStatement pstmt = null;

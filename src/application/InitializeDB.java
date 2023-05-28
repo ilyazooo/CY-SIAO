@@ -176,6 +176,10 @@ public class InitializeDB {
         return bedOccupancyList;
     }
 	
+	/**
+	* Retrieve all the bedoccupancy link to someone in the database.
+	*/
+	
 	public static List<CustomDate[]> retrieveAllDatesForSomeone(int personId) {
 
 	    Connection conn = null;
@@ -223,6 +227,10 @@ public class InitializeDB {
 	    return arrangeCustomDate;
 	}
 	
+	/**
+	* Concatenate all the dates from the bedoccupancy found for a better search.
+	*/
+	
 	public static List<CustomDate[]> Concatenate(List<CustomDate[]> arrangeCustomDate) {
 	    for(CustomDate[] period1 : arrangeCustomDate) {
 	    	for(CustomDate[] period2 : arrangeCustomDate) {
@@ -237,6 +245,9 @@ public class InitializeDB {
 	    return(arrangeCustomDate);
 	}
 
+	/**
+	* Retrieve the date when one people leave CY-Siao.
+	*/
 	
 	public Date retrieveMaxDateForSomeone(int personId) {
 
@@ -386,16 +397,6 @@ public class InitializeDB {
 	}
 	
 	
-
-    /**
-     * The main method used for testing the InitializeDB class.
-     *
-     * @param args the command line arguments
-     */
-	public static void main(String[] args) {
-		
-				
-	}
 	
 	
 	

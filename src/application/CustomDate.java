@@ -208,6 +208,10 @@ public class CustomDate {
         return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
     }
     
+	/**
+	* Find the day between the two dates.
+	*/
+    
     public static CustomDate calculateMiddleDate(CustomDate date1, CustomDate date2) {
         int day1 = date1.getDay();
         int month1 = date1.getMonth();
@@ -240,6 +244,10 @@ public class CustomDate {
         return new CustomDate(middleDate);
     }
     
+	/**
+	* Calculate the difference between two dates in days.
+	*/
+    
     public static int calculateDateDifference(CustomDate date1, CustomDate date2) {
         CustomDate startDate;
         CustomDate endDate;
@@ -264,12 +272,5 @@ public class CustomDate {
         return difference - 1; // Subtract 1 to exclude the end date itself
     }
     
-    public static void main(String[] args) {
-    	CustomDate date1 = new CustomDate("1/06/2023");
-    	CustomDate date2 = new CustomDate("1/07/2023");
-    	
-    	CustomDate date3 = calculateMiddleDate(date1, date2);
-    	System.out.println(date3.getDate());
-    }
     
 }

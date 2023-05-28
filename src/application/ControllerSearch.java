@@ -74,6 +74,10 @@ public class ControllerSearch implements Initializable{
 	 
 	 private HashMap<Integer, String> idRoomAllowed = new HashMap<>();;
 	 
+	 
+	/**
+	* Initialize the window.
+	*/
 	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
@@ -98,10 +102,12 @@ public class ControllerSearch implements Initializable{
 		
 	}
 	
-
-
 	
 	Set<Integer> peopleForSearch = new HashSet<>();
+	
+	/**
+	* Add a people to the search list.
+	*/
 	
 	public void addToSearch(ActionEvent e) {
 		ListView2.getItems().clear();
@@ -140,6 +146,10 @@ public class ControllerSearch implements Initializable{
 	    }
 	    messageRegister2.setText("Selected : "+ selectedNames);
 	}
+	
+	/**
+	* Empty the search list.
+	*/
 	
 	public void clear(ActionEvent e) {
 		peopleForSearch.clear();
@@ -277,7 +287,6 @@ public class ControllerSearch implements Initializable{
      * Performs a search for available beds based on the selected person and date range.
      * This method is called when the search button is clicked.
      *
-     * @param actionEvent The ActionEvent triggered by the search button click.
      */
 	
 	public void search(ActionEvent e) {
@@ -565,7 +574,7 @@ public class ControllerSearch implements Initializable{
 	/**
 	 * Validates and saves the selected bed occupations in the database.
 	 *
-	 * @param e The ActionEvent object associated with the event.
+	 * 
 	 */
 	public void validateOccupation(ActionEvent e) {
 		List<Integer> listeId = new ArrayList<>(this.peopleForSearch);
@@ -642,7 +651,7 @@ public class ControllerSearch implements Initializable{
      * Handles the event when the user clicks the "Return to Menu" button.
      * Closes the current window and returns to the main menu.
      *
-     * @param e the ActionEvent triggered by the button click
+     *
      */
 	public void returnMenu(ActionEvent e) {
 		try {

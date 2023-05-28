@@ -1,7 +1,7 @@
 package application;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -35,21 +35,22 @@ public class Room {
      * @param genderRestriction  the set of genders allowed in the room
      */
     
-    public Room(int _id, String _title, int _numberOfBeds, boolean _isGenderRestricted, boolean _isAgeRestricted, List<Bed> _beds, int _ageMin, int _ageMax, Set<Gender> _genderRestriction) {
-        this.id = _id;
-        this.title = _title;
-        this.isGenderRestricted = _isGenderRestricted;
-        this.isAgeRestricted = _isAgeRestricted; 
-        this.numberOfBeds = _numberOfBeds;
-        this.beds = new ArrayList<>();
-        this.beds = _beds;
-        this.ageMin = _ageMin; 
-        this.ageMax = _ageMax;
-        this.genderRestriction = _genderRestriction; 
+    public Room(int id, String title, int numberOfBeds, boolean isGenderRestricted, boolean isAgeRestricted, List<Bed> beds, int ageMin, int ageMax, Set<Gender> genderRestriction) {
+        this.id = id;
+        this.title = title;
+        this.numberOfBeds = numberOfBeds;
+        this.isGenderRestricted = isGenderRestricted;
+        this.isAgeRestricted = isAgeRestricted; 
+        this.beds = beds != null ? new ArrayList<>(beds) : new ArrayList<>();
+        this.ageMin = ageMin; 
+        this.ageMax = ageMax;
+        this.genderRestriction = genderRestriction != null ? new HashSet<>(genderRestriction) : new HashSet<>();
         
         if(isGenderRestricted || isAgeRestricted) {
-        	this.isRestricted = true; 
+            this.isRestricted = true; 
         }
+        
+        this.occupants = new HashSet<>();
     }
 
     public int getId() {
@@ -61,7 +62,7 @@ public class Room {
     }
     
     public List<Bed> getBeds(){
-    	return this.beds;
+        return beds;
     }
     
     public String getTitle() {
@@ -81,7 +82,7 @@ public class Room {
     }
     
     public Set<People> getOccupants(){
-    	return this.occupants;
+        return occupants;
     }
 
     public boolean isRestricted() {
@@ -93,11 +94,11 @@ public class Room {
     }
     
     public int getAgeMin() {
-    	return this.ageMin;
+        return ageMin;
     }
     
     public int getAgeMax() {
-    	return this.ageMax;
+        return ageMax;
     }
     
     public boolean isGenderRestricted() {
@@ -105,77 +106,15 @@ public class Room {
     }
     
     public Set<Gender> getGenderRestriction() {
-    	return this.genderRestriction;
+        return genderRestriction;
     }
     
-    
-    
-    
     public boolean checkOccupants() {
-        for (People occupant : this.occupants) {
+        for (People occupant : occupants) {
             if (!occupant.isAllowed(this)) {
                 return false;
             }
         }
         return true;
     }
-
-    
-    /*
-    public void setAgeRestriction(int ageMin, int ageMax) {
-    
-    	/*
-    	boolean previousisRestricted = this.isRestricted;
-    	boolean previousageRestricted = this.ageRestricted;
-    	int previousAgeMin = this.ageMin;
-    	int previousAgeMax = this.ageMax;
-    	this.isRestricted = true;
-    	this.ageRestricted = true;
-    	this.ageMin = ageMin;
-    	this.ageMax = ageMax;
-    	if (!checkOccupants()) {
-    		System.out.println("Exception");
-    		this.isRestricted= previousisRestricted;
-    		this.ageRestricted=previousageRestricted;
-    		this.ageMin=previousAgeMin;
-    		this.ageMax=previousAgeMax;
-    	}4
-    	
-    	
-    }
-    
-    public void setNoAgeRestriction() {
-    	this.isAgeRestricted = false;
-    	if (!this.isGenderRestricted){
-    		this.isRestricted = false;
-    	}
-    }
-    
-    public void setGenderRestriction(Set<Gender> genderRestriction) {
-    	boolean previousisRestricted = this.isRestricted;
-    	boolean previousgenderRestricted = this.genderRestricted;
-    	Set<Gender> previousgenderRestriction = this.genderRestriction;
-    	this.isRestricted = true;
-    	this.genderRestricted = true;
-    	this.genderRestriction = genderRestriction;
-    	if (!checkOccupants()) {
-    		System.out.println("Exception");
-    		this.isRestricted= previousisRestricted;
-    		this.genderRestricted=previousgenderRestricted;
-    		this.genderRestriction=previousgenderRestriction;
-    	}
-    }
-    
-    public void setNoGenderRestriction() {
-    	this.genderRestricted = false;
-    	if (!this.ageRestricted){
-    		this.isRestricted = false;
-    	}
-    }
-    
-    */
-    
-   
-    
-   
 }
