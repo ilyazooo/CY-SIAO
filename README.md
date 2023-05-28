@@ -42,7 +42,7 @@ Pour faire fonctionner notre application JavaFX, suivez les étapes suivantes :
 
 - Fournir un état des lieux en temps réel de la capacité d'accueil du centre d'hébergement.
 - Afficher des statistiques telles que le taux d'occupation des chambres, le nombre de lits disponibles, etc.
-- 
+
 4. Gestion de la base de données :
 
 - Stocker toutes les données relatives aux chambres, aux lits et aux personnes dans une base de données.
