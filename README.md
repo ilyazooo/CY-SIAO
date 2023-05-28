@@ -1,19 +1,14 @@
-# CY-SIAO
-Gestion d'un centre d'hébergement en JAVA
-Nom du projet
-[Description du projet]
+# **CY-SIAO**
+## *Gestion d'un centre d'hébergement en JAVA*
 
-Table des matières
-Aperçu
-Fonctionnalités
-Installation
-Utilisation
-Contribuer
-Licence
-Aperçu
-[Insérez ici une brève description ou une capture d'écran du projet pour donner un aperçu rapide aux utilisateurs.]
 
-Fonctionnalités
+## Table des matières
+- [Installation](#installation)
+- [Aperçu](#aperçu)
+- [Fonctionnalités](#section-1)
+
+
+###Installation
 [Listez ici les principales fonctionnalités de votre projet.]
 Installation
 [Expliquez ici comment installer et configurer votre projet. Incluez toutes les dépendances nécessaires et les étapes spécifiques.]
