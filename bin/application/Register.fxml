@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="984.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerRegister">
+   <children>
+      <Text fx:id="titleRegister" fill="#4474c5" layoutX="358.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTER A PERSON" wrappingWidth="268.46649169921875">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="45.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4474c5" height="403.0" layoutX="124.0" layoutY="103.0" stroke="#4474c5" strokeLineCap="ROUND" strokeType="INSIDE" width="736.0" />
+      <TextField fx:id="firstNameInput" alignment="CENTER" layoutX="375.0" layoutY="146.0" prefHeight="24.0" prefWidth="126.0" promptText="First Name" style="-fx-background-radius: 30;" stylesheets="@application.css">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="lastNameInput" alignment="CENTER" layoutX="514.0" layoutY="146.0" prefHeight="24.0" prefWidth="126.0" promptText="Last Name" style="-fx-background-radius: 30;" styleClass="text-input" stylesheets="@application.css">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="birthCityInput" alignment="CENTER" layoutX="421.0" layoutY="190.0" prefHeight="22.0" prefWidth="157.0" promptText="Birth City" style="-fx-background-radius: 30;" stylesheets="@application.css">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="securityNumberInput" alignment="CENTER" layoutX="421.0" layoutY="233.0" prefHeight="26.0" prefWidth="158.0" promptText="Social Security Number" style="-fx-background-radius: 30;" stylesheets="@application.css">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="14.0" />
+         </font>
+      </TextField>
+      <DatePicker fx:id="birthDateInput" layoutX="423.0" layoutY="278.0" prefHeight="26.0" prefWidth="150.0" promptText="Birth Date" style="-fx-background-radius: 5;" />
+      <Button layoutX="353.0" layoutY="385.0" mnemonicParsing="false" onAction="#register" prefHeight="48.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" stylesheets="@application.css" text="Register" textFill="#4474c5">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="29.0" />
+         </font>
+      </Button>
+      <Button layoutX="515.0" layoutY="385.0" mnemonicParsing="false" onAction="#returnMenu" prefHeight="51.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" stylesheets="@application.css" text="Return to Menu" textFill="#4474c5">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="24.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="rButton1" layoutX="422.0" layoutY="328.0" mnemonicParsing="false" text="Male" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT" size="12.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rButton2" layoutX="482.0" layoutY="328.0" mnemonicParsing="false" text="Female" textFill="WHITE" toggleGroup="$gender">
+         <font>
+            <Font name="Tw Cen MT" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rButton3" layoutX="547.0" layoutY="328.0" mnemonicParsing="false" text="Other" textFill="WHITE" toggleGroup="$gender">
+         <font>
+            <Font name="Tw Cen MT" size="12.0" />
+         </font>
+      </RadioButton>
+      <Text fx:id="messageRegister" fill="WHITE" layoutX="343.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="334.39999999999986">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="984.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerSearch">
+   <children>
+      <Text fx:id="titleRegister" fill="#4474c5" layoutX="334.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SEARCH MATCHING BED" wrappingWidth="316.46649169921875">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="45.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4474c5" height="502.0" layoutX="124.0" layoutY="79.0" stroke="#4474c5" strokeLineCap="ROUND" strokeType="INSIDE" width="746.0" />
+      <Label layoutX="193.0" layoutY="98.0" text="Choose a person" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="439.0" layoutY="415.0" mnemonicParsing="false" onAction="#search" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: #ffffff; -fx-background-radius: 300; -fx-border-radius: 300; -fx-border-color: #4474c5;" text="Search" textFill="#4474c5">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="808.0" layoutY="13.0" mnemonicParsing="false" onAction="#returnMenu" prefHeight="51.0" prefWidth="150.0" style="-fx-background-color: #4474c5;" stylesheets="@application.css" text="Return to Menu" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="24.0" />
+         </font>
+      </Button>
+      
+      
+      <Button layoutX="185.0" layoutY="480.0" minWidth="53.0" mnemonicParsing="false" onAction="#addToSearch" prefHeight="38.0" prefWidth="71.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20; -fx-border-radius: 20;" stylesheets="@application.css" text="Add" textFill="#4474c5">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="21.0" />
+         </font>
+      </Button>
+      
+      
+      <Text fx:id="messageRegister" fill="WHITE" layoutX="387.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="210.39999999999986">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="19.0" />
+         </font>
+      </Text>
+      <ListView fx:id="ListView1" layoutX="158.0" layoutY="138.0" prefHeight="330.0" prefWidth="224.0" />
+      <ListView fx:id="ListView2" layoutX="603.0" layoutY="139.0" prefHeight="330.0" prefWidth="224.0" />
+      <Label fx:id="titleCorrespondingBed" layoutX="610.0" layoutY="98.0" text="Proposal for placement" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="startDateInput" layoutX="417.0" layoutY="201.0" prefHeight="26.0" prefWidth="140.0" />
+      <Button fx:id="buttonValidate" layoutX="667.0" layoutY="480.0" mnemonicParsing="false" onAction="#validateOccupation" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #4474c5;" text="Validate" textFill="#4474c5">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="21.0" />
+         </font>
+      </Button>
+      <Label layoutX="415.0" layoutY="165.0" text="Enter Start Date" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="421.0" layoutY="246.0" text="Enter End Date" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="endDateInput" layoutX="417.0" layoutY="279.0" prefHeight="26.0" prefWidth="140.0" />
+      <Button layoutX="267.0" layoutY="480.0" minWidth="53.0" mnemonicParsing="false" onAction="#clear" prefHeight="38.0" prefWidth="71.0" style="-fx-background-color: #4474c5; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #ffffff;" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="21.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="radiobutton1" layoutX="440.0" layoutY="364.0" mnemonicParsing="false" text="Yes" textFill="WHITE" toggleGroup="$room">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="room" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radiobutton2" layoutX="494.0" layoutY="364.0" mnemonicParsing="false" text="No" textFill="WHITE" toggleGroup="$room">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="15.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="434.0" layoutY="330.0" text="Same Room" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
+         </font>
+      </Label>
+      <Text fx:id="messageRegister2" fill="WHITE" layoutX="165.0" layoutY="543.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="210.39999999999986">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

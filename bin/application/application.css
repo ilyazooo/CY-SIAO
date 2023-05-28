@@ -1,0 +1,54 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.table-view {
+    -fx-background-color:#4474c5;
+    -fx-background-radius:14 14 0 0;
+    
+    }
+.table-view .column-header-background{
+        -fx-background-color: #4474c5;
+        -fx-background-radius:14;
+        -fx-background-insets: 0 0 10 0;
+       
+        
+        
+    }
+.table-view .column-header, .table-view .filler{
+        -fx-size:50px;
+        -fx-border-width: 0 0 10 0;
+        -fx-background-color:transparent;
+        
+    }
+    
+.table-view .column-header .label {
+        -fx-text-fill: white ;
+    }
+
+
+.progress-bar-red .bar {
+    -fx-background-color: red;
+}
+
+.progress-bar-orange .bar {
+    -fx-background-color: orange;
+}
+
+.button {
+
+
+    -fx-cursor: pointer;
+    -fx-border: none;
+    -fx-border-radius: 7px;
+    -fx-background-color: #0070f3;
+    -fx-effect: dropshadow(gaussian, rgba(0, 118, 255, 0.39), 0, 0, 0, 4);
+    -fx-transition-property: background, -fx-text-fill, -fx-effect;
+    -fx-transition-duration: 0.2s;
+}
+
+.button:hover {
+    -fx-background-color: rgba(0, 118, 255, 0.9);
+    -fx-effect: dropshadow(gaussian, rgba(0, 118, 255, 0.23), 0, 0, 0, 6);
+}
+
+
+

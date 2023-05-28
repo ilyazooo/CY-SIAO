@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="248.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fx:id="text1" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-translate-x: 10; -fx-translate-y: 8;" text="Room1" wrappingWidth="105.04495239257812">
+         <font>
+            <Font name="Tw Cen MT" size="11.0" />
+         </font>
+      </Text>
+      <ProgressBar fx:id="progressBar1" prefHeight="21.0" prefWidth="130.0" progress="0.0" style="-fx-translate-y: 3;" />
+   </children>
+</HBox>
