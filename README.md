@@ -8,7 +8,7 @@
 - [Fonctionnalités](#section-1)
 
 
-###Installation
+### Installation
 [Listez ici les principales fonctionnalités de votre projet.]
 Installation
 [Expliquez ici comment installer et configurer votre projet. Incluez toutes les dépendances nécessaires et les étapes spécifiques.]
