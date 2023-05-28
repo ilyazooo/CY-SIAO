@@ -28,11 +28,32 @@ Pour faire fonctionner notre application JavaFX, suivez les étapes suivantes :
 
 ## Fonctionnalités 
 
-Copy code
-cd votre_projet
-Installez les dépendances.
-Copy code
-npm install
-[Ajoutez ici d'autres instructions spécifiques, le cas échéant.]
-Utilisation
-[Expliquez ici comment utiliser votre projet une fois qu'il est installé. Fournissez des exemples de code ou des instructions détaillées.]
+1. Création de la topologie des lits :
+
+- Permettre de définir la structure du centre d'hébergement en créant des chambres et des lits de différentes tailles.
+- Offrir une interface conviviale pour ajouter, modifier et supprimer des chambres et des lits.
+
+2. Attribution des lits aux personnes :
+
+- Permettre d'affecter des lits à des personnes en fonction de différents critères tels que le nombre de personnes, les dates, les genres et les âges.
+- Gérer la disponibilité des lits et empêcher les affectations de lit en cas de conflit de réservation.
+
+3. Suivi en temps réel de la capacité d'accueil :
+
+- Fournir un état des lieux en temps réel de la capacité d'accueil du centre d'hébergement.
+- Afficher des statistiques telles que le taux d'occupation des chambres, le nombre de lits disponibles, etc.
+- 
+4. Gestion de la base de données :
+
+- Stocker toutes les données relatives aux chambres, aux lits et aux personnes dans une base de données.
+- Permettre la création, la modification et la suppression des entrées de la base de données via une interface conviviale.
+ 
+5. Recherche de lits disponibles :
+
+- Offrir une fonctionnalité de recherche pour trouver des lits disponibles en fonction des critères spécifiés (nombre de personnes, dates, genres, etc.).
+- Afficher les résultats de recherche de manière claire et intuitive.
+
+6. Interface graphique conviviale :
+
+- Concevoir une interface utilisateur attrayante et conviviale utilisant JavaFX et SceneBuilder.
+- Permettre une navigation facile entre les différentes fonctionnalités de l'application.
