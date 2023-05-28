@@ -26,7 +26,7 @@ Pour faire fonctionner notre application JavaFX, suivez les étapes suivantes :
 [![Capture-d-cran-2023-05-26-232434.png](https://i.postimg.cc/LXbmkTFz/Capture-d-cran-2023-05-26-232434.png)](https://postimg.cc/qh2f42RR)
 
 
-## Fonctionnalités 
+### Fonctionnalités 
 
 1. Création de la topologie des lits :
 
