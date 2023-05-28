@@ -9,18 +9,25 @@
 
 
 ### Installation
-[Listez ici les principales fonctionnalités de votre projet.]
-Installation
-[Expliquez ici comment installer et configurer votre projet. Incluez toutes les dépendances nécessaires et les étapes spécifiques.]
+Pour faire fonctionner notre application JavaFX, suivez les étapes suivantes :
 
-Exemple:
+## Étape 1 : Configuration de la base de données
+1. Assurez-vous d'avoir installé WampServer (ou un autre serveur de base de données MySQL) sur votre machine.
+2. Lancez WampServer et assurez-vous que le service MySQL est en cours d'exécution.
+3. Importez notre base de données en exécutant le fichier SQL fourni. Cela créera les tables nécessaires pour notre application.
 
-Clonez ce dépôt sur votre machine locale.
-bash
-Copy code
-git clone https://github.com/votre_utilisateur/votre_projet.git
-Naviguez jusqu'au répertoire du projet.
-bash
+
+## Étape 2 : Ajout du JAR externe MySQL
+1. Copiez le fichier JAR mySQL dans le répertoire de votre projet JavaFX.
+2. Dans votre environnement de développement, ajoutez le JAR externe à votre projet JavaFX. Les étapes exactes peuvent varier en fonction de votre environnement de développement spécifique, mais généralement, vous pouvez faire un clic droit sur le projet, sélectionner "Propriétés" ou "Build Path", puis ajouter le JAR à la configuration du projet.
+
+### Aperçu
+
+![Menu CY-SIAO]([https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png](https://i.postimg.cc/LXbmkTFz/Capture-d-cran-2023-05-26-232434.png))
+
+
+## Fonctionnalités 
+
 Copy code
 cd votre_projet
 Installez les dépendances.
