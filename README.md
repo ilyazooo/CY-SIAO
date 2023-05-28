@@ -5,7 +5,7 @@
 ## Table des matières
 - [Installation](#installation)
 - [Aperçu](#aperçu)
-- [Fonctionnalités](#section-1)
+- [Fonctionnalités](#fonctionnalités)
 
 
 ### Installation
