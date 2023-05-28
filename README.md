@@ -23,7 +23,7 @@ Pour faire fonctionner notre application JavaFX, suivez les étapes suivantes :
 
 ### Aperçu
 
-![Menu CY-SIAO]([https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png](https://i.postimg.cc/LXbmkTFz/Capture-d-cran-2023-05-26-232434.png))
+[![Capture-d-cran-2023-05-26-232434.png](https://i.postimg.cc/LXbmkTFz/Capture-d-cran-2023-05-26-232434.png)](https://postimg.cc/qh2f42RR)
 
 
 ## Fonctionnalités 
